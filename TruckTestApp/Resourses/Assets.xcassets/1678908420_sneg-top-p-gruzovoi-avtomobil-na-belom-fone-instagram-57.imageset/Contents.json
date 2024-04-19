@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "1678908420_sneg-top-p-gruzovoi-avtomobil-na-belom-fone-instagram-57.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

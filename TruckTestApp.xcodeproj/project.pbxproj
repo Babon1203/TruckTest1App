@@ -7,20 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B3191C662BD2CA4900720BDA /* TestOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3191C652BD2CA4900720BDA /* TestOne.swift */; };
+		B32CC29E2BD14CFE008E2848 /* GeneralKnowledgeQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32CC29D2BD14CFE008E2848 /* GeneralKnowledgeQuestion.swift */; };
+		B32CC2A02BD16790008E2848 /* CategoryTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32CC29F2BD16790008E2848 /* CategoryTestView.swift */; };
+		B32CC2A22BD167B1008E2848 /* BrakesCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32CC2A12BD167B1008E2848 /* BrakesCategory.swift */; };
+		B32CC2A52BD167E6008E2848 /* PracticeQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32CC2A42BD167E6008E2848 /* PracticeQuestions.swift */; };
+		B32CC2A72BD16860008E2848 /* CombinationVehiclesCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32CC2A62BD16860008E2848 /* CombinationVehiclesCategory.swift */; };
+		B32CC2C82BD17B6D008E2848 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B32CC2C72BD17B6D008E2848 /* Main.storyboard */; };
 		B33DCDF42BD121E200FEBAC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33DCDF32BD121E200FEBAC0 /* AppDelegate.swift */; };
 		B33DCDF62BD121E200FEBAC0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33DCDF52BD121E200FEBAC0 /* SceneDelegate.swift */; };
 		B33DCDF82BD121E200FEBAC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33DCDF72BD121E200FEBAC0 /* ViewController.swift */; };
-		B33DCDFB2BD121E200FEBAC0 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = B33DCDFA2BD121E200FEBAC0 /* Base */; };
 		B33DCDFD2BD121E300FEBAC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B33DCDFC2BD121E300FEBAC0 /* Assets.xcassets */; };
 		B33DCE002BD121E300FEBAC0 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = B33DCDFF2BD121E300FEBAC0 /* Base */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B3191C652BD2CA4900720BDA /* TestOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestOne.swift; sourceTree = "<group>"; };
+		B32CC29D2BD14CFE008E2848 /* GeneralKnowledgeQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralKnowledgeQuestion.swift; sourceTree = "<group>"; };
+		B32CC29F2BD16790008E2848 /* CategoryTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTestView.swift; sourceTree = "<group>"; };
+		B32CC2A12BD167B1008E2848 /* BrakesCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrakesCategory.swift; sourceTree = "<group>"; };
+		B32CC2A42BD167E6008E2848 /* PracticeQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeQuestions.swift; sourceTree = "<group>"; };
+		B32CC2A62BD16860008E2848 /* CombinationVehiclesCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinationVehiclesCategory.swift; sourceTree = "<group>"; };
+		B32CC2C72BD17B6D008E2848 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B33DCDF02BD121E200FEBAC0 /* TruckTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TruckTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B33DCDF32BD121E200FEBAC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B33DCDF52BD121E200FEBAC0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B33DCDF72BD121E200FEBAC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B33DCDFA2BD121E200FEBAC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B33DCDFC2BD121E300FEBAC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B33DCDFF2BD121E300FEBAC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B33DCE012BD121E300FEBAC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -37,6 +49,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B3191C672BD2CB9400720BDA /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B3191C652BD2CA4900720BDA /* TestOne.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		B32CC2C92BD17B9D008E2848 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B32CC29D2BD14CFE008E2848 /* GeneralKnowledgeQuestion.swift */,
+				B32CC2A42BD167E6008E2848 /* PracticeQuestions.swift */,
+				B32CC2A12BD167B1008E2848 /* BrakesCategory.swift */,
+				B32CC2A62BD16860008E2848 /* CombinationVehiclesCategory.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		B32CC2CA2BD17DCE008E2848 /* ViewControllersBasic */ = {
+			isa = PBXGroup;
+			children = (
+				B33DCDF72BD121E200FEBAC0 /* ViewController.swift */,
+				B32CC29F2BD16790008E2848 /* CategoryTestView.swift */,
+			);
+			path = ViewControllersBasic;
+			sourceTree = "<group>";
+		};
+		B32CC2CB2BD17E2D008E2848 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				B33DCE012BD121E300FEBAC0 /* Info.plist */,
+				B33DCDF52BD121E200FEBAC0 /* SceneDelegate.swift */,
+				B33DCDF32BD121E200FEBAC0 /* AppDelegate.swift */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		B32CC2CC2BD17E72008E2848 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				B33DCDFC2BD121E300FEBAC0 /* Assets.xcassets */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		B32CC2CD2BD17E95008E2848 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				B33DCDFE2BD121E300FEBAC0 /* LaunchScreen.storyboard */,
+				B32CC2C72BD17B6D008E2848 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
 		B33DCDE72BD121E200FEBAC0 = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +123,12 @@
 		B33DCDF22BD121E200FEBAC0 /* TruckTestApp */ = {
 			isa = PBXGroup;
 			children = (
-				B33DCDF32BD121E200FEBAC0 /* AppDelegate.swift */,
-				B33DCDF52BD121E200FEBAC0 /* SceneDelegate.swift */,
-				B33DCDF72BD121E200FEBAC0 /* ViewController.swift */,
-				B33DCDF92BD121E200FEBAC0 /* Main.storyboard */,
-				B33DCDFC2BD121E300FEBAC0 /* Assets.xcassets */,
-				B33DCDFE2BD121E300FEBAC0 /* LaunchScreen.storyboard */,
-				B33DCE012BD121E300FEBAC0 /* Info.plist */,
+				B3191C672BD2CB9400720BDA /* Service */,
+				B32CC2CA2BD17DCE008E2848 /* ViewControllersBasic */,
+				B32CC2CC2BD17E72008E2848 /* Resourses */,
+				B32CC2CB2BD17E2D008E2848 /* SupportingFiles */,
+				B32CC2CD2BD17E95008E2848 /* Storyboard */,
+				B32CC2C92BD17B9D008E2848 /* Tests */,
 			);
 			path = TruckTestApp;
 			sourceTree = "<group>";
@@ -125,9 +191,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B32CC2C82BD17B6D008E2848 /* Main.storyboard in Resources */,
 				B33DCDFD2BD121E300FEBAC0 /* Assets.xcassets in Resources */,
 				B33DCE002BD121E300FEBAC0 /* Base in Resources */,
-				B33DCDFB2BD121E200FEBAC0 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +204,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B32CC2A72BD16860008E2848 /* CombinationVehiclesCategory.swift in Sources */,
 				B33DCDF82BD121E200FEBAC0 /* ViewController.swift in Sources */,
+				B3191C662BD2CA4900720BDA /* TestOne.swift in Sources */,
+				B32CC2A52BD167E6008E2848 /* PracticeQuestions.swift in Sources */,
 				B33DCDF42BD121E200FEBAC0 /* AppDelegate.swift in Sources */,
+				B32CC2A22BD167B1008E2848 /* BrakesCategory.swift in Sources */,
 				B33DCDF62BD121E200FEBAC0 /* SceneDelegate.swift in Sources */,
+				B32CC29E2BD14CFE008E2848 /* GeneralKnowledgeQuestion.swift in Sources */,
+				B32CC2A02BD16790008E2848 /* CategoryTestView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B33DCDF92BD121E200FEBAC0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B33DCDFA2BD121E200FEBAC0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B33DCDFE2BD121E300FEBAC0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,13 +356,15 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8FTCYWMBNC;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TruckTestApp/Info.plist;
+				INFOPLIST_FILE = TruckTestApp/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,9 +372,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.swiftbook.TruckTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -319,13 +389,15 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8FTCYWMBNC;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TruckTestApp/Info.plist;
+				INFOPLIST_FILE = TruckTestApp/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -333,9 +405,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.swiftbook.TruckTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
