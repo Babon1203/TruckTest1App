@@ -25,7 +25,7 @@ class GeneralKnowledgeQuestion: UIViewController {
     @IBOutlet weak var answerTwo: UIButton!
     @IBOutlet weak var answerOne: UIButton!
     
-    var ticketID: String?
+    var ticketID: String? = ""
     
     
     var index = 0
@@ -33,9 +33,11 @@ class GeneralKnowledgeQuestion: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        resetButtons()
+
         loadQuestionsForTicket(ticketID)
         displayQuestion(at: index)
+       
         
         
         answerOne.addTarget(self, action: #selector(checkAnswer(_:)), for: .touchUpInside)
@@ -49,96 +51,89 @@ class GeneralKnowledgeQuestion: UIViewController {
     
     func loadQuestionsForTicket(_ ticketID: String?) {
         print("Ticket ID received: \(String(describing: ticketID))")
-        guard let ticketID = ticketID else { return }
-        
-        switch ticketID.lowercased() {
-            
-        case "ticket 1":
-            dataStore.questionsAll[index1] = DataStore.shared.questions1
-            
-        case "ticket 2":
-            index1 += 1
-            dataStore.questionsAll[index1] = DataStore.shared.questions2
-        default:
-            break
-            
+        guard let ticketID = ticketID else {
+            print("No ticket ID provided")
+            return
         }
         
+        // Словарь, сопоставляющий идентификаторы билетов с соответствующими массивами вопросов
+        let questionsDictionary = [
+            ticketID: dataStore.questionsAll[index1]
+            
+        ]
         
+        if let questionsForTicket = questionsDictionary[ticketID] {
+            index1 += 1
+            
+        } else {
+            print("No questions found for \(ticketID). Please check the ticket ID and try again.")
+        }
     }
     
     
     var correctAnswerCount = 0
     var incorrectAnswerCount = 0
     
-    func displayQuestion(at index: Int) {
-        numberQuestion.text = "\(index+1)/\(dataStore.questionsAll[index1].count)"
-        
-        progressQuestion.progress = Float(index + 1) / Float(dataStore.questionsAll[index1].count)
-        
-        questionLabel.text = dataStore.questionsAll[index1][index].text
-        answerOne.setTitle(dataStore.questionsAll[index1][index].answers[0], for: .normal)
-        answerTwo.setTitle(dataStore.questionsAll[index1][index].answers[1], for: .normal)
-        answerThree.setTitle(dataStore.questionsAll[index1][index].answers[2], for: .normal)
-        answerFour.setTitle(dataStore.questionsAll[index1][index].answers[3], for: .normal)
-    }
+    
     
     @objc func checkAnswer(_ sender: UIButton) {
-        
         let correctAnswer = dataStore.questionsAll[index1][index].correctAnswer
-        if sender.currentTitle == correctAnswer {
-            correctAnswerCount += 1
-            correctAnswerLabel.text = "Correct! 🎉"
-            sender.tintColor = .systemGreen
-            print(" правильно \(correctAnswerCount)")
-        } else {
-            incorrectAnswerCount += 1
-            correctAnswerLabel.text = "CORRECT ANSWER: \(correctAnswer)"
-            sender.tintColor = .systemRed
-            print (" не правильно \(incorrectAnswerCount)")
+        let allButtons = [answerOne, answerTwo, answerThree, answerFour]
+        
+        // Находим кнопку с правильным ответом
+        if let correctButton = allButtons.first(where: { $0?.currentTitle == correctAnswer }) {
+            if sender.currentTitle == correctAnswer {
+                correctAnswerCount += 1
+                print("правильно \(correctAnswerCount)")
+            } else {
+                sender.layer.borderWidth = 9
+                    sender.layer.borderColor = UIColor.systemRed.cgColor
+                incorrectAnswerCount += 1
+                print("не правильно \(incorrectAnswerCount)")
+            }
+            
+            // Выделяем кнопку с правильным ответом зелёным, если она найдена
+            correctButton?.layer.borderWidth = 9
+            correctButton?.layer.borderColor = UIColor.systemGreen.cgColor
+        }
+        // Отключаем все кнопки, чтобы считать только первое нажатие
+        allButtons.forEach {
+            $0?.isEnabled = false
+//            $0?.layer.borderColor = nil
+//            $0?.layer.borderWidth = 0
         }
     }
     
     @objc func nextQuestion() {
+        resetButtons()
         if index + 1 < dataStore.questionsAll[index1].count {
             index += 1
             displayQuestion(at: index)
-            resetAnswerButtons()
+            
         } else {
             let alert = UIAlertController(title: "Test completed", message: "You answered \(correctAnswerCount) out of \(dataStore.questionsAll[index1].count) correctly", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             present(alert, animated: true, completion: nil)
         }
-        
-        func resetAnswerButtons() {
-            correctAnswerLabel.text = ""
-            answerOne.tintColor = .systemBlue
-            answerTwo.tintColor = .systemBlue
-            answerThree.tintColor = .systemBlue
-            answerFour.tintColor = .systemBlue
+    }
+        func resetButtons() {
+            let allButtons = [answerOne, answerTwo, answerThree, answerFour]
+            allButtons.forEach { button in
+                button?.isEnabled = true
+                button?.layer.borderWidth = 0
+                button?.layer.borderColor = UIColor.clear.cgColor
+            }
+        }
+        func displayQuestion(at index: Int) {
+            resetButtons()
+            numberQuestion.text = "\(index+1)/\(dataStore.questionsAll[index1].count)"
+            
+            progressQuestion.progress = Float(index + 1) / Float(dataStore.questionsAll[index1].count)
+            
+            questionLabel.text = dataStore.questionsAll[index1][index].text
+            answerOne.setTitle(dataStore.questionsAll[index1][index].answers[0], for: .normal)
+            answerTwo.setTitle(dataStore.questionsAll[index1][index].answers[1], for: .normal)
+            answerThree.setTitle(dataStore.questionsAll[index1][index].answers[2], for: .normal)
+            answerFour.setTitle(dataStore.questionsAll[index1][index].answers[3], for: .normal)
         }
     }
-    
-    
-    
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        print("Подготовка к переходу с ticketID в качестве отправителя: \(String(describing: sender))")
-//        if segue.identifier == "showTest",
-//           let destinationVC = segue.destination as? GeneralKnowledgeQuestion,
-//           let ticketID = sender as? String {
-//            destinationVC.ticketID = ticketID
-//            print("Передаем ticketID: \(ticketID)")
-//        } else {
-//            print("Идентификатор перехода не совпадает или неправильный тип назначения")
-//        }
-//    }
-
-
-
-
-
-
-
-
-
-}

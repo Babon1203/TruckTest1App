@@ -1430,10 +1430,10 @@
             </objects>
             <point key="canvasLocation" x="1732" y="4093"/>
         </scene>
-        <!--General Knowledge Question-->
+        <!--General Knowledge Question Practice-->
         <scene sceneID="KkE-Zx-a51">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="HoA-UH-cqu" customClass="GeneralKnowledgeQuestion" customModule="TruckTestApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="HoA-UH-cqu" customClass="GeneralKnowledgeQuestionPractice" customModule="TruckTestApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Q4w-KW-hMK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1620,7 +1620,7 @@
                                         <rect key="frame" x="170" y="0.0" width="90" height="260"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UFZ-9g-4Pt">
-                                                <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="81" height="90"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="6Tv-fa-mAK"/>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="90" id="kDp-va-JZQ"/>
@@ -2062,7 +2062,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="f3r-hy-qid">
                                                 <rect key="frame" x="0.0" y="0.0" width="90" height="260"/>
                                                 <subviews>
-                                                    <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4WY-Jc-fqh">
+                                                    <button opaque="NO" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4WY-Jc-fqh">
                                                         <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
                                                         <accessibility key="accessibilityConfiguration" identifier="ticket 1"/>
                                                         <constraints>
@@ -2093,7 +2093,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="cnt-51-bt9">
                                                 <rect key="frame" x="170" y="0.0" width="90" height="260"/>
                                                 <subviews>
-                                                    <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Sh-X0-WBr">
+                                                    <button opaque="NO" multipleTouchEnabled="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Sh-X0-WBr">
                                                         <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
                                                         <accessibility key="accessibilityConfiguration" identifier="ticket 2"/>
                                                         <constraints>
@@ -2205,14 +2205,14 @@
                     </view>
                     <navigationItem key="navigationItem" id="tfG-Qc-6N2"/>
                     <connections>
-                        <outletCollection property="ticketButtons" destination="4WY-Jc-fqh" collectionClass="NSMutableArray" id="AMy-hJ-w9W"/>
-                        <outletCollection property="ticketButtons" destination="4Sh-X0-WBr" collectionClass="NSMutableArray" id="n8k-X2-JLD"/>
-                        <outletCollection property="ticketButtons" destination="t8I-9Y-gHK" collectionClass="NSMutableArray" id="vTz-RG-0Of"/>
-                        <outletCollection property="ticketButtons" destination="2uN-uy-IJB" collectionClass="NSMutableArray" id="R2A-o3-NEb"/>
-                        <outletCollection property="ticketButtons" destination="LLw-VJ-B4R" collectionClass="NSMutableArray" id="ZTz-UZ-d7J"/>
-                        <outletCollection property="ticketButtons" destination="s9g-rj-WyC" collectionClass="NSMutableArray" id="sEz-L1-Wxt"/>
-                        <outletCollection property="ticketButtons" destination="W20-m3-8c5" collectionClass="NSMutableArray" id="ccJ-OU-hrj"/>
-                        <outletCollection property="ticketButtons" destination="fhw-NU-w8g" collectionClass="NSMutableArray" id="gnF-UC-6Et"/>
+                        <outlet property="ticketPushEight" destination="fhw-NU-w8g" id="kX0-zY-n2d"/>
+                        <outlet property="ticketPushFive" destination="LLw-VJ-B4R" id="3fH-oF-Dzd"/>
+                        <outlet property="ticketPushFour" destination="2uN-uy-IJB" id="Qyr-BF-Cc4"/>
+                        <outlet property="ticketPushOne" destination="4WY-Jc-fqh" id="Ykc-uU-5EG"/>
+                        <outlet property="ticketPushSeven" destination="W20-m3-8c5" id="SiY-Gr-uQd"/>
+                        <outlet property="ticketPushSix" destination="s9g-rj-WyC" id="WeJ-b7-B8A"/>
+                        <outlet property="ticketPushThree" destination="t8I-9Y-gHK" id="lOU-RO-pcQ"/>
+                        <outlet property="ticketPushTwo" destination="4Sh-X0-WBr" id="qUu-p1-7v1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z7D-uT-58H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -2307,7 +2307,7 @@
         <segue reference="JFt-1s-wEA"/>
         <segue reference="F5u-Rg-zzD"/>
         <segue reference="bU9-bw-PVg"/>
-        <segue reference="slH-xA-ft4"/>
+        <segue reference="yue-YF-qXW"/>
         <segue reference="exx-GN-FrH"/>
         <segue reference="Pdc-xm-cho"/>
         <segue reference="4bw-NJ-llJ"/>
