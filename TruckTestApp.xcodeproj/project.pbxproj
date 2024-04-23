@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B3191C662BD2CA4900720BDA /* TestOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3191C652BD2CA4900720BDA /* TestOne.swift */; };
+		B3191C662BD2CA4900720BDA /* TestOneGeneral.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3191C652BD2CA4900720BDA /* TestOneGeneral.swift */; };
 		B32CC29E2BD14CFE008E2848 /* GeneralKnowledgeQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32CC29D2BD14CFE008E2848 /* GeneralKnowledgeQuestion.swift */; };
 		B32CC2A02BD16790008E2848 /* CategoryTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32CC29F2BD16790008E2848 /* CategoryTestView.swift */; };
 		B32CC2A22BD167B1008E2848 /* BrakesCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32CC2A12BD167B1008E2848 /* BrakesCategory.swift */; };
@@ -19,10 +19,13 @@
 		B33DCDF82BD121E200FEBAC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33DCDF72BD121E200FEBAC0 /* ViewController.swift */; };
 		B33DCDFD2BD121E300FEBAC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B33DCDFC2BD121E300FEBAC0 /* Assets.xcassets */; };
 		B33DCE002BD121E300FEBAC0 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = B33DCDFF2BD121E300FEBAC0 /* Base */; };
+		B3CFA1592BD795DF00CDDE59 /* MenuTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CFA1582BD795DF00CDDE59 /* MenuTesting.swift */; };
+		B3CFA15B2BD7B06000CDDE59 /* TicketGeneral.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CFA15A2BD7B06000CDDE59 /* TicketGeneral.swift */; };
+		B3CFA15F2BD7BC6D00CDDE59 /* GeneralKnowledgeQuestionPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CFA15E2BD7BC6D00CDDE59 /* GeneralKnowledgeQuestionPractice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B3191C652BD2CA4900720BDA /* TestOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestOne.swift; sourceTree = "<group>"; };
+		B3191C652BD2CA4900720BDA /* TestOneGeneral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestOneGeneral.swift; sourceTree = "<group>"; };
 		B32CC29D2BD14CFE008E2848 /* GeneralKnowledgeQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralKnowledgeQuestion.swift; sourceTree = "<group>"; };
 		B32CC29F2BD16790008E2848 /* CategoryTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTestView.swift; sourceTree = "<group>"; };
 		B32CC2A12BD167B1008E2848 /* BrakesCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrakesCategory.swift; sourceTree = "<group>"; };
@@ -36,6 +39,9 @@
 		B33DCDFC2BD121E300FEBAC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B33DCDFF2BD121E300FEBAC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B33DCE012BD121E300FEBAC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3CFA1582BD795DF00CDDE59 /* MenuTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTesting.swift; sourceTree = "<group>"; };
+		B3CFA15A2BD7B06000CDDE59 /* TicketGeneral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketGeneral.swift; sourceTree = "<group>"; };
+		B3CFA15E2BD7BC6D00CDDE59 /* GeneralKnowledgeQuestionPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralKnowledgeQuestionPractice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,12 +55,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B3191C672BD2CB9400720BDA /* Service */ = {
+		B3191C672BD2CB9400720BDA /* ServiceTests */ = {
 			isa = PBXGroup;
 			children = (
-				B3191C652BD2CA4900720BDA /* TestOne.swift */,
+				B3191C652BD2CA4900720BDA /* TestOneGeneral.swift */,
+				B3CFA15A2BD7B06000CDDE59 /* TicketGeneral.swift */,
 			);
-			path = Service;
+			path = ServiceTests;
 			sourceTree = "<group>";
 		};
 		B32CC2C92BD17B9D008E2848 /* Tests */ = {
@@ -71,6 +78,7 @@
 		B32CC2CA2BD17DCE008E2848 /* ViewControllersBasic */ = {
 			isa = PBXGroup;
 			children = (
+				B3CFA1582BD795DF00CDDE59 /* MenuTesting.swift */,
 				B33DCDF72BD121E200FEBAC0 /* ViewController.swift */,
 				B32CC29F2BD16790008E2848 /* CategoryTestView.swift */,
 			);
@@ -123,14 +131,23 @@
 		B33DCDF22BD121E200FEBAC0 /* TruckTestApp */ = {
 			isa = PBXGroup;
 			children = (
-				B3191C672BD2CB9400720BDA /* Service */,
+				B3191C672BD2CB9400720BDA /* ServiceTests */,
 				B32CC2CA2BD17DCE008E2848 /* ViewControllersBasic */,
 				B32CC2CC2BD17E72008E2848 /* Resourses */,
 				B32CC2CB2BD17E2D008E2848 /* SupportingFiles */,
 				B32CC2CD2BD17E95008E2848 /* Storyboard */,
 				B32CC2C92BD17B9D008E2848 /* Tests */,
+				B3CFA15D2BD7BC3200CDDE59 /* Practice */,
 			);
 			path = TruckTestApp;
+			sourceTree = "<group>";
+		};
+		B3CFA15D2BD7BC3200CDDE59 /* Practice */ = {
+			isa = PBXGroup;
+			children = (
+				B3CFA15E2BD7BC6D00CDDE59 /* GeneralKnowledgeQuestionPractice.swift */,
+			);
+			path = Practice;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,13 +223,16 @@
 			files = (
 				B32CC2A72BD16860008E2848 /* CombinationVehiclesCategory.swift in Sources */,
 				B33DCDF82BD121E200FEBAC0 /* ViewController.swift in Sources */,
-				B3191C662BD2CA4900720BDA /* TestOne.swift in Sources */,
+				B3191C662BD2CA4900720BDA /* TestOneGeneral.swift in Sources */,
 				B32CC2A52BD167E6008E2848 /* PracticeQuestions.swift in Sources */,
 				B33DCDF42BD121E200FEBAC0 /* AppDelegate.swift in Sources */,
 				B32CC2A22BD167B1008E2848 /* BrakesCategory.swift in Sources */,
 				B33DCDF62BD121E200FEBAC0 /* SceneDelegate.swift in Sources */,
 				B32CC29E2BD14CFE008E2848 /* GeneralKnowledgeQuestion.swift in Sources */,
 				B32CC2A02BD16790008E2848 /* CategoryTestView.swift in Sources */,
+				B3CFA15B2BD7B06000CDDE59 /* TicketGeneral.swift in Sources */,
+				B3CFA1592BD795DF00CDDE59 /* MenuTesting.swift in Sources */,
+				B3CFA15F2BD7BC6D00CDDE59 /* GeneralKnowledgeQuestionPractice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
