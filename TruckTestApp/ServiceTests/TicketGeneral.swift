@@ -18,17 +18,17 @@ class TicketGeneral: UIViewController {
     @IBOutlet weak var ticketPushSix: UIButton!
     @IBOutlet weak var ticketPushSeven: UIButton!
     @IBOutlet weak var ticketPushEight: UIButton!
-   
-    var ticketID: String = ""
+    
+    var ticketID: String? = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTicketButtons()
+       
     }
-
     
     private func setupTicketButtons() {
-      
+        
         ticketPushOne.addTarget(self, action: #selector(ticketPressed(_:)), for: .touchUpInside)
         ticketPushTwo.addTarget(self, action: #selector(ticketPressed(_:)), for: .touchUpInside)
         ticketPushThree.addTarget(self, action: #selector(ticketPressed(_:)), for: .touchUpInside)
@@ -46,27 +46,24 @@ class TicketGeneral: UIViewController {
         ticketPushSix.tag = 6
         ticketPushSeven.tag = 7
         ticketPushEight.tag = 8
-
+        
         
     }
     
-    @objc func ticketPressed(_ sender: UIButton) {
+    @IBAction func ticketPressed(_ sender: UIButton) {
         let ticketID = "Ticket \(sender.tag)"
-        performSegue(withIdentifier: "showTest", sender: "Ticket \(sender.tag)")
-        print("Ticket ID received: \(String(describing: ticketID))")
-        
+        print("Передаем ticketID: \(ticketID)")
+        performSegue(withIdentifier: "show", sender: ticketID)
     }
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        print("Подготовка к переходу с ticketID в качестве отправителя: \(String(describing: sender))")
-        if segue.identifier == "showTest",
+        if segue.identifier == "show",
            let destinationVC = segue.destination as? GeneralKnowledgeQuestion,
-           let ticketID = sender as? String {
+           let ticketID = sender as? String {  // Убедитесь, что sender действительно строка
             destinationVC.ticketID = ticketID
-            print("Передаем ticketID: \(ticketID)")
+            print("Ticket ID передан корректно: \(ticketID)")
         } else {
-            print("Идентификатор перехода не совпадает или неправильный тип назначения")
+            print("Ошибка: тип назначения не соответствует GeneralKnowledgeQuestion или ticketID не является строкой")
         }
     }
-}
 
+}

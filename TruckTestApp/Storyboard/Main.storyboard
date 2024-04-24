@@ -151,7 +151,7 @@
                                                     <fontDescription key="subtitleFontDescription" type="system" weight="light" pointSize="0.0"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <segue destination="tTl-dL-tIM" kind="show" id="TqA-Pb-UgN"/>
+                                                    <segue destination="tTl-dL-tIM" kind="show" id="LrR-4T-sHA"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PlX-ee-tXp">
@@ -601,14 +601,14 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="E8u-Di-jQJ">
-                                        <rect key="frame" x="14.5" y="61" width="350" height="2"/>
+                                        <rect key="frame" x="14.5" y="72" width="350" height="2"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="350" id="JTj-rn-BfI"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="350" id="JTj-rn-BfI"/>
                                             <constraint firstAttribute="height" constant="2" id="T98-tm-j1W"/>
                                         </constraints>
                                     </progressView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ToN-2M-wxM">
-                                        <rect key="frame" x="39.5" y="94" width="300" height="100"/>
+                                        <rect key="frame" x="39.5" y="116.5" width="300" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="3KC-ed-7wD"/>
                                             <constraint firstAttribute="height" constant="100" id="dfE-2i-lcO"/>
@@ -618,7 +618,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="center" axis="vertical" distribution="fillEqually" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="a17-GX-S5o">
-                                        <rect key="frame" x="114.5" y="225" width="150" height="262"/>
+                                        <rect key="frame" x="114.5" y="258.5" width="150" height="262"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pbp-2a-Mtk">
                                                 <rect key="frame" x="0.0" y="0.0" width="150" height="40"/>
@@ -658,26 +658,16 @@
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="240" id="5MS-nc-6LG"/>
                                         </constraints>
                                     </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pJk-ls-PXa">
-                                        <rect key="frame" x="39.5" y="518" width="300" height="20"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="OUJ-bW-dlZ"/>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="wHm-qV-JXO"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="AfS-aT-2y4">
-                                        <rect key="frame" x="72.5" y="569" width="234" height="28"/>
+                                        <rect key="frame" x="72.5" y="562.5" width="234" height="34.5"/>
                                         <subviews>
                                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8dx-ns-i6v">
-                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="28"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="gray" image="arrowshape.turn.up.left.fill" catalog="system" title="Back"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hCx-Cc-fFI">
-                                                <rect key="frame" x="0.0" y="0.0" width="100" height="28"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="gray" image="house.fill" catalog="system" title="Home"/>
                                                 <connections>
@@ -685,7 +675,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eqN-B2-RHe">
-                                                <rect key="frame" x="134" y="0.0" width="100" height="28"/>
+                                                <rect key="frame" x="134" y="0.0" width="100" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="gray" image="arrowshape.turn.up.forward.fill" catalog="system" imagePlacement="trailing" title="Next"/>
                                             </button>
@@ -713,7 +703,6 @@
                         <outlet property="answerOne" destination="Pbp-2a-Mtk" id="pQD-XG-mgv"/>
                         <outlet property="answerThree" destination="nBz-lg-hPM" id="iPw-q1-s6o"/>
                         <outlet property="answerTwo" destination="96w-vq-atc" id="Rli-tR-N31"/>
-                        <outlet property="correctAnswerLabel" destination="pJk-ls-PXa" id="qVF-0G-jFF"/>
                         <outlet property="nextAnswer" destination="eqN-B2-RHe" id="prX-bV-Ct4"/>
                         <outlet property="numberQuestion" destination="f7q-eh-Jax" id="Mqb-mn-w2z"/>
                         <outlet property="progressQuestion" destination="E8u-Di-jQJ" id="LBN-3r-Tj9"/>
@@ -723,7 +712,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bDs-k6-Krj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="weG-oY-iTN" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1732" y="-804"/>
+            <point key="canvasLocation" x="2671.1999999999998" y="-806.44677661169419"/>
         </scene>
         <!--Brakes Category-->
         <scene sceneID="g7Y-gb-1yr">
@@ -2048,176 +2037,115 @@
         <!--Ticket General-->
         <scene sceneID="M8t-PQ-oxL">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="tTl-dL-tIM" customClass="TicketGeneral" customModule="TruckTestApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController wantsFullScreenLayout="YES" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tTl-dL-tIM" customClass="TicketGeneral" customModule="TruckTestApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NBc-CG-Ujg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="55" translatesAutoresizingMaskIntoConstraints="NO" id="eoy-0k-hlT">
-                                <rect key="frame" x="57" y="47" width="260" height="575"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="XA4-in-mZX">
+                                <rect key="frame" x="20" y="30" width="335" height="607"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="top" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="vy8-u1-eBA">
-                                        <rect key="frame" x="0.0" y="0.0" width="260" height="260"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="Vmc-lJ-0Os">
+                                        <rect key="frame" x="0.0" y="0.0" width="157.5" height="607"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="f3r-hy-qid">
-                                                <rect key="frame" x="0.0" y="0.0" width="90" height="260"/>
-                                                <subviews>
-                                                    <button opaque="NO" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4WY-Jc-fqh">
-                                                        <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
-                                                        <accessibility key="accessibilityConfiguration" identifier="ticket 1"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="90" id="2RU-en-S9W"/>
-                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="6es-gE-GJx"/>
-                                                        </constraints>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="Ticket 1"/>
-                                                        <connections>
-                                                            <segue destination="mq5-Ty-F5W" kind="show" identifier="showTest" id="yue-YF-qXW"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t8I-9Y-gHK">
-                                                        <rect key="frame" x="0.0" y="170" width="90" height="90"/>
-                                                        <accessibility key="accessibilityConfiguration" identifier="ticket 3"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="90" id="ZXr-Iw-P3a"/>
-                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="foQ-Y9-Eox"/>
-                                                        </constraints>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="Ticket 3"/>
-                                                        <connections>
-                                                            <segue destination="mq5-Ty-F5W" kind="show" identifier="showTest" id="Y2F-dA-LJ5"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="cnt-51-bt9">
-                                                <rect key="frame" x="170" y="0.0" width="90" height="260"/>
-                                                <subviews>
-                                                    <button opaque="NO" multipleTouchEnabled="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Sh-X0-WBr">
-                                                        <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
-                                                        <accessibility key="accessibilityConfiguration" identifier="ticket 2"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="90" id="bnH-2W-8EK"/>
-                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="ytM-WI-Jfo"/>
-                                                        </constraints>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="Ticket 2"/>
-                                                        <connections>
-                                                            <segue destination="mq5-Ty-F5W" kind="show" identifier="showTest" id="imn-w0-q1s"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2uN-uy-IJB">
-                                                        <rect key="frame" x="0.0" y="170" width="90" height="90"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="9fA-m3-2lD"/>
-                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="90" id="rqD-ru-cQU"/>
-                                                        </constraints>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="ticket 4"/>
-                                                        <connections>
-                                                            <segue destination="mq5-Ty-F5W" kind="show" id="Or8-Q7-M6h"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                            </stackView>
+                                            <button opaque="NO" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4WY-Jc-fqh">
+                                                <rect key="frame" x="0.0" y="0.0" width="157.5" height="116"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Ticket 1" cornerStyle="large"/>
+                                                <connections>
+                                                    <segue destination="mq5-Ty-F5W" kind="show" identifier="show" id="yue-YF-qXW"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t8I-9Y-gHK">
+                                                <rect key="frame" x="0.0" y="164" width="157.5" height="115.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Ticket 3" cornerStyle="large"/>
+                                                <connections>
+                                                    <segue destination="mq5-Ty-F5W" kind="show" identifier="show" id="Y2F-dA-LJ5"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LLw-VJ-B4R">
+                                                <rect key="frame" x="0.0" y="327.5" width="157.5" height="116"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="ticket 5" cornerStyle="large"/>
+                                                <connections>
+                                                    <segue destination="mq5-Ty-F5W" kind="show" identifier="show" id="XZK-CG-05e"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W20-m3-8c5">
+                                                <rect key="frame" x="0.0" y="491.5" width="157.5" height="115.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="ticket 7" cornerStyle="large"/>
+                                                <connections>
+                                                    <segue destination="mq5-Ty-F5W" kind="show" identifier="show" id="Ywe-XU-xz6"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="top" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="XA4-in-mZX">
-                                        <rect key="frame" x="0.0" y="315" width="260" height="260"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="3EQ-1a-1DJ">
+                                        <rect key="frame" x="177.5" y="0.0" width="157.5" height="607"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="Vmc-lJ-0Os">
-                                                <rect key="frame" x="0.0" y="0.0" width="90" height="260"/>
-                                                <subviews>
-                                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LLw-VJ-B4R">
-                                                        <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="90" id="BVb-76-934"/>
-                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="yAZ-8x-SJr"/>
-                                                        </constraints>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="ticket 5"/>
-                                                        <connections>
-                                                            <segue destination="mq5-Ty-F5W" kind="show" id="XZK-CG-05e"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" tag="7" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W20-m3-8c5">
-                                                        <rect key="frame" x="0.0" y="170" width="90" height="90"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="4bl-yK-cDK"/>
-                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="90" id="Vt1-qa-gXB"/>
-                                                        </constraints>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="ticket 7"/>
-                                                        <connections>
-                                                            <segue destination="mq5-Ty-F5W" kind="show" id="Ywe-XU-xz6"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="3EQ-1a-1DJ">
-                                                <rect key="frame" x="170" y="0.0" width="90" height="260"/>
-                                                <subviews>
-                                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s9g-rj-WyC">
-                                                        <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="90" id="cLd-TJ-omj"/>
-                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="yKa-5H-PGz"/>
-                                                        </constraints>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="ticket 6"/>
-                                                        <connections>
-                                                            <segue destination="mq5-Ty-F5W" kind="show" id="Hoc-j1-waW"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" tag="8" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhw-NU-w8g">
-                                                        <rect key="frame" x="0.0" y="170" width="90" height="90"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="90" id="6Fm-Uo-cNs"/>
-                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="8Si-qG-bPb"/>
-                                                        </constraints>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="ticket 8"/>
-                                                        <connections>
-                                                            <segue destination="mq5-Ty-F5W" kind="show" id="slH-xA-ft4"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                            </stackView>
+                                            <button opaque="NO" multipleTouchEnabled="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Sh-X0-WBr">
+                                                <rect key="frame" x="0.0" y="0.0" width="157.5" height="116"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Ticket 2" cornerStyle="large"/>
+                                                <connections>
+                                                    <segue destination="mq5-Ty-F5W" kind="show" identifier="show" id="AtL-3B-1x8"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2uN-uy-IJB">
+                                                <rect key="frame" x="0.0" y="164" width="157.5" height="115.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="ticket 4" cornerStyle="large"/>
+                                                <connections>
+                                                    <segue destination="mq5-Ty-F5W" kind="show" identifier="show" id="Or8-Q7-M6h"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s9g-rj-WyC">
+                                                <rect key="frame" x="0.0" y="327.5" width="157.5" height="116"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="ticket 6" cornerStyle="large"/>
+                                                <connections>
+                                                    <segue destination="mq5-Ty-F5W" kind="show" identifier="show" id="Hoc-j1-waW"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" multipleTouchEnabled="YES" tag="8" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhw-NU-w8g">
+                                                <rect key="frame" x="0.0" y="491.5" width="157.5" height="115.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="ticket 8" cornerStyle="large"/>
+                                                <connections>
+                                                    <segue destination="mq5-Ty-F5W" kind="show" identifier="show" id="slH-xA-ft4"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="vy8-u1-eBA" firstAttribute="leading" secondItem="eoy-0k-hlT" secondAttribute="leading" id="5PB-tJ-bCq"/>
-                                    <constraint firstItem="XA4-in-mZX" firstAttribute="top" secondItem="vy8-u1-eBA" secondAttribute="bottom" constant="55" id="ZD5-Qy-t77"/>
-                                    <constraint firstItem="vy8-u1-eBA" firstAttribute="top" secondItem="eoy-0k-hlT" secondAttribute="top" id="f5I-Vw-YNF"/>
-                                    <constraint firstAttribute="trailing" secondItem="vy8-u1-eBA" secondAttribute="trailing" id="mgD-lA-P60"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NdC-0f-Ahx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="NdC-0f-Ahx" firstAttribute="bottom" secondItem="eoy-0k-hlT" secondAttribute="bottom" constant="45" id="JQ4-m8-4jl"/>
-                            <constraint firstItem="eoy-0k-hlT" firstAttribute="top" secondItem="NdC-0f-Ahx" secondAttribute="top" constant="47" id="oCu-VY-v8o"/>
-                            <constraint firstItem="eoy-0k-hlT" firstAttribute="leading" secondItem="NdC-0f-Ahx" secondAttribute="leading" constant="57" id="tDc-hg-rSD"/>
-                            <constraint firstItem="NdC-0f-Ahx" firstAttribute="trailing" secondItem="eoy-0k-hlT" secondAttribute="trailing" constant="58" id="zOz-LT-5Us"/>
+                            <constraint firstItem="NdC-0f-Ahx" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="XA4-in-mZX" secondAttribute="bottom" constant="30" id="TQX-r7-eLo"/>
+                            <constraint firstItem="XA4-in-mZX" firstAttribute="leading" relation="lessThanOrEqual" secondItem="NdC-0f-Ahx" secondAttribute="leading" constant="20" id="ihr-SU-IYR"/>
+                            <constraint firstItem="XA4-in-mZX" firstAttribute="top" relation="lessThanOrEqual" secondItem="NdC-0f-Ahx" secondAttribute="top" constant="30" id="qGB-wi-8CT"/>
+                            <constraint firstItem="NdC-0f-Ahx" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="XA4-in-mZX" secondAttribute="trailing" constant="20" id="xXT-Vw-IJB"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="tfG-Qc-6N2"/>
                     <connections>
-                        <outlet property="ticketPushEight" destination="fhw-NU-w8g" id="kX0-zY-n2d"/>
-                        <outlet property="ticketPushFive" destination="LLw-VJ-B4R" id="3fH-oF-Dzd"/>
-                        <outlet property="ticketPushFour" destination="2uN-uy-IJB" id="Qyr-BF-Cc4"/>
-                        <outlet property="ticketPushOne" destination="4WY-Jc-fqh" id="Ykc-uU-5EG"/>
-                        <outlet property="ticketPushSeven" destination="W20-m3-8c5" id="SiY-Gr-uQd"/>
-                        <outlet property="ticketPushSix" destination="s9g-rj-WyC" id="WeJ-b7-B8A"/>
-                        <outlet property="ticketPushThree" destination="t8I-9Y-gHK" id="lOU-RO-pcQ"/>
-                        <outlet property="ticketPushTwo" destination="4Sh-X0-WBr" id="qUu-p1-7v1"/>
+                        <outlet property="ticketPushEight" destination="fhw-NU-w8g" id="JRp-yg-M75"/>
+                        <outlet property="ticketPushFive" destination="LLw-VJ-B4R" id="WWP-ut-4Up"/>
+                        <outlet property="ticketPushFour" destination="2uN-uy-IJB" id="uiw-Sc-VzY"/>
+                        <outlet property="ticketPushOne" destination="4WY-Jc-fqh" id="Kvd-Js-TP7"/>
+                        <outlet property="ticketPushSeven" destination="W20-m3-8c5" id="efN-98-VKi"/>
+                        <outlet property="ticketPushSix" destination="s9g-rj-WyC" id="PHd-Tn-vs6"/>
+                        <outlet property="ticketPushThree" destination="t8I-9Y-gHK" id="0VY-WQ-cCb"/>
+                        <outlet property="ticketPushTwo" destination="4Sh-X0-WBr" id="3qT-lN-mKN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z7D-uT-58H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="882" y="-805"/>
+            <point key="canvasLocation" x="1804" y="-806.44677661169419"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="qLa-o3-hVJ">
@@ -2307,7 +2235,7 @@
         <segue reference="JFt-1s-wEA"/>
         <segue reference="F5u-Rg-zzD"/>
         <segue reference="bU9-bw-PVg"/>
-        <segue reference="yue-YF-qXW"/>
+        <segue reference="Or8-Q7-M6h"/>
         <segue reference="exx-GN-FrH"/>
         <segue reference="Pdc-xm-cho"/>
         <segue reference="4bw-NJ-llJ"/>
@@ -2322,16 +2250,16 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemCyanColor">
-            <color red="0.1960784314" green="0.67843137249999996" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGrayColor">
-            <color red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tableBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

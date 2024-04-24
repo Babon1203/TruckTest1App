@@ -5,7 +5,7 @@
 //  Created by Кирилл Саталкин on 19.04.2024.
 //
 
-import Foundation
+
 import UIKit
 
 class DataStore {
@@ -17,6 +17,7 @@ class DataStore {
         let correctAnswer: String
     }
     var questionsAll: [[Question]] = []
+    
     var questions1: [Question] = []
     var questions2: [Question] = []
    
@@ -83,17 +84,7 @@ class DataStore {
             Question(text: "Which of the following statements about tire failure is true?", answers: ["If the steering feels heavy, it may be a sign one of the rear tires has failed", "Any time you hear a tire blow, you would be safest to assume it is not yours", "It can take a few seconds for your vehicle to react, and you might think it was some other vehicle", "All of the above"], correctAnswer: "It can take a few seconds for your vehicle to react, and you might think it was some other vehicle")
             ])
          self.questionsAll += [questions1, questions2]
-
-//        self.questions2 += [question26, question27, question28, question29, question30, question31, question32, question33, question34, question35, question36, question37, question38, question39, question40, question41, question42, question43, question44, question45, question46, question47, question48, question49, question50]
-         
+        
         }
  
     }
-
-func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    if segue.identifier == "showTest",
-       let destinationVC = segue.destination as? GeneralKnowledgeQuestion,
-       let ticketID = sender as? String {
-        destinationVC.ticketID = ticketID
-    }
-}
